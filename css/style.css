@@ -31,6 +31,14 @@ body
 
 }
 
+#just-an-image
+{
+	background:linear-gradient(rgba(5,5,5,.7),rgba(0,0,0, 0.8)),url('../image/gradpic.jpg') fixed center center;
+	background-size: cover;
+	height:25vh;
+}
+
+
 #title-name
 {
 	font-family: cochin;
@@ -110,3 +118,11 @@ div#info
 	width: 100%;
 	height:100%;
 }
+
+div#strategy
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
