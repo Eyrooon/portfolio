@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	color:#000;
+}
+
+#landingpage
+{
+	background:linear-gradient(rgba(5,5,5,.7),rgba(0,0,0, 0.8)),  url('../image/bg.jpeg') fixed center center;
+	background-size: cover;
+	height:100vh;
+	position: relative;
+}
+
+#landingpage img
+{
+	border-radius: 50%;
+	position: absolute;
+	height:20%;
+	width: 15%;
+	bottom:30%;
+	left:42%;
+
+}
+
+#title-name
+{
+	font-family: cochin;
+}
+
+.fadingtext p
+{
+	color:#f4f4f4 !important;
+    position: absolute; 
+	opacity: 0;
+	font-size: 2em;
+	bottom:20%;
+}
+
+.fadeleft
+{
+    left:30%;
+    animation: toLeft 3000ms  ease-in;
+}
+.faderight
+{
+    animation: toRight 3000ms  ease-in;
+}
+
+.fadebottom
+{
+    animation: toBottom 3000ms  ease-in;
+}
+
+
+@keyframes toLeft
+{
+    from{
+      
+        opacity: 1;
+        bottom:0;
+    }
+    to {
+    bottom: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes toRight
+{
+    from{
+        opacity: 1;
+        right:0;
+    }
+    to {
+    right:50%;
+    opacity: 0;
+  }
+}
+
+@keyframes toBottom
+{
+    from{
+        opacity: 1;
+        left:0;
+    }
+    to {
+    opacity: 0;
+    left:80%;
+  }
+}
