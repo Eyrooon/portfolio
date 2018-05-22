@@ -122,7 +122,57 @@ div#info
 div#strategy
 {
 	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:1em;
 }
+
+div#strategy > div
+{
+	border-right:1px solid black;
+}
+
+div#strategy div:last-child
+{
+	border-right:0;
+}
+
+div#skills
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	
+}
+
+div#skills div > img
+{	
+	height: 100%;
+	width:50%;
+}
+
+footer
+{
+	padding:1em;
+	margin-top: 3em;
+	background: #c0c0c0;
+}
+
+@media(max-width:800px)
+{
+	.fadingtext p
+	{
+	font-size: 1em;
+	}
+
+	div#info
+	{
+	grid-template-columns: 1fr;
+	}
+
+	#just-an-image h3
+	{
+		font-size: 1em;
+	}
+
+}
+
 

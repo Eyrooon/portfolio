@@ -27,17 +27,6 @@ function fadeAnim()
 
 setInterval(fadeAnim,2800);
 
-/*
-setInterval(moveLeft,1000);
-
-function moveLeft()
-{
-    $('p').animate({
-        left: '50%',
-        opacity: '0'
-    });
-}
-*/
 function reset()
 {
     fadeText[i].classList.remove('fadeleft');
