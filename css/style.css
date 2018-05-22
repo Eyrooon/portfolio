@@ -16,6 +16,7 @@ body
 {
 	background:linear-gradient(rgba(5,5,5,.7),rgba(0,0,0, 0.8)),  url('../image/bg.jpeg') fixed center center;
 	background-size: cover;
+	object-fit: cover;
 	height:100vh;
 	position: relative;
 }
@@ -36,6 +37,7 @@ body
 	background:linear-gradient(rgba(5,5,5,.7),rgba(0,0,0, 0.8)),url('../image/gradpic.jpg') fixed center center;
 	background-size: cover;
 	height:25vh;
+
 }
 
 
@@ -126,6 +128,7 @@ div#strategy
 	grid-gap:1em;
 }
 
+
 div#strategy > div
 {
 	border-right:1px solid black;
@@ -147,6 +150,21 @@ div#skills div > img
 {	
 	height: 100%;
 	width:50%;
+}
+
+div#news
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3em;
+	padding-bottom: 6em;
+	margin-top: 3em;
+}
+
+div#news > div > img
+{
+	width: 100%;
+	height:40%;
 }
 
 footer
@@ -173,6 +191,20 @@ footer
 		font-size: 1em;
 	}
 
+	div#strategy > div > p
+	{
+		font-size: .8em;
+	}
+
+	div#news
+	{
+		grid-template-columns: 1fr;
+		
+	}
+
 }
+
+
+
 
 
