@@ -5,7 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<script type="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -17,7 +20,7 @@
 			<p>A Backend Developer</p>
 		</div>
 		<div class="text-center">
-				<button class="mt-5 p-3 px-5 btn btn-lg btn-light">Read More</button>
+				<a href="#info" class="mt-5 p-3 px-5 btn btn-lg btn-light scrollLink">Read More</a>
 		</div>
 	</div>
 	<nav class="navbar navbar-expand-md navbar-light sticky-top">
@@ -26,8 +29,8 @@
 					<!-- Right Side Of Navbar -->
 					<ul class="navbar-nav ml-auto">
 						<!-- Authentication Links -->
-							<li><a class="nav-link" href="#info">About</a></li>
-							<li><a class="nav-link" href="#skills">Skills</a></li>
+							<li><a class="nav-link scrollLink" href="#info">About</a></li>
+							<li><a class="nav-link scrollLink" href="#skilltab">Skills</a></li>
 					</ul>
 				</div>
 			</div>
@@ -58,8 +61,8 @@
 		<div id="just-an-image" class="my-5">
 			<h3 class="text-light text-center">If you believe in yourself and have dedication and pride - and never quit, you'll be a winner. ...</h3>
 		</div>
-
-	<div class="container">
+	<div style="background:#f4f4f4">	
+	<div class="container" id="skilltab">
 		<h1 class="mt-3">Work Strategy</h1>
 		<div id="strategy" class="mt-5">
 			<div>
@@ -96,6 +99,7 @@
 		</div>
 
 	</div>
+</div>
 	<footer class="text-center">
 			<a href="https://www.facebook.com/IvanAaronEsguerra"><h3><i class="fa fa-facebook-official"></i></h3></a>
 			<a href="mailto:ivanaaron.esguerra@gmail.com?subject=Concern"><h3><i class="fa fa-google"></i></h3></a>
@@ -103,6 +107,16 @@
 </body>
 	<script src="js/fadingtext.js"></script>
 	<script src="js/news.js"></script>
+	<script type="text/javascript">
+		$(".scrollLink").click(function(e) {
+		e.preventDefault();
+		var position = $($(this).attr("href")).offset().top;
+
+		$("body, html").animate({
+			scrollTop: position
+		} /* speed */ );
+		});
+	</script>
 </html>
 
 	
